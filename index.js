@@ -21,7 +21,7 @@ app.listen(PORT, () => {
 });
 
 app.post('/webhook', function (req, res) {
-  console.log(req);
+  res.send(req);
   res.send('HTTP POST request sent to the webhook URL!');
   app.post('/webhook', function (req, res) {
     res.send('HTTP POST request sent to the webhook URL!');
